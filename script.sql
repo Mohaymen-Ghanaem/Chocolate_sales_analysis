@@ -35,3 +35,7 @@ Select SUM(formatted_amount) FROM chocolate_sales where country = 'Australia';
 
 /*UK*/
 Select SUM(formatted_amount) FROM chocolate_sales where country = 'UK';
+
+/*Finding all the profit for each country by grouping*/
+Select country, sum(formatted_amount) as total_amount FROM chocolate_sales
+group by country;
