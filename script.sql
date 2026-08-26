@@ -12,5 +12,26 @@ SET formatted_amount = CAST(replace(replace(amount, '$', ''), ',', '') AS NUMERI
 /*Selecting new formatted amount*/
 SELECT formatted_amount from chocolate_sales;
 
-Select * from chocolate_sales
+Select * from chocolate_sales;
 /*Queries to answer business questions*/
+/*Selecting distinct countries*/
+Select Distinct country from chocolate_sales;
+/*Profit of each country for the past three years*/
+
+/*Canada*/
+Select SUM(formatted_amount) FROM chocolate_sales where country = 'Canada';
+
+/*India*/
+Select SUM(formatted_amount) FROM chocolate_sales where country = 'India';
+
+/*USA*/
+Select SUM(formatted_amount) FROM chocolate_sales where country = 'USA';
+
+/*New Zealand*/
+Select SUM(formatted_amount) FROM chocolate_sales where country = 'New Zealand';
+
+/*Australia*/
+Select SUM(formatted_amount) FROM chocolate_sales where country = 'Australia';
+
+/*UK*/
+Select SUM(formatted_amount) FROM chocolate_sales where country = 'UK';
