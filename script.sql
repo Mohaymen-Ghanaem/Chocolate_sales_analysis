@@ -37,5 +37,14 @@ Select SUM(formatted_amount) FROM chocolate_sales where country = 'Australia';
 Select SUM(formatted_amount) FROM chocolate_sales where country = 'UK';
 
 /*Finding all the profit for each country by grouping*/
-Select country, sum(formatted_amount) as total_amount FROM chocolate_sales
+Select country, sum(formatted_amount) as total_amount_country FROM chocolate_sales
 group by country;
+
+/*Most sold chocolate from each country*/
+SELECT product, sum(chocolate_sales.formatted_amount) as total_amount_product FROM chocolate_sales
+group by product;
+
+/*Salesperson and how much they sold*/
+SELECT "Sales Person", SUM(formatted_amount) as total_amout_sales from chocolate_sales
+group by "Sales Person"
+order by total_amout_sales desc ;
