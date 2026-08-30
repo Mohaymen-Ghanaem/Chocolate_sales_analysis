@@ -20,3 +20,6 @@ This project utilizes SQL to analyze a dataset of chocolate sales across differe
 <img width="1536" height="675" alt="image" src="https://github.com/user-attachments/assets/34606096-2e78-4dc7-9423-ea7b65ab5aed" />
 <img width="1529" height="596" alt="image" src="https://github.com/user-attachments/assets/e0155fd8-7428-4069-9887-f5a6ee0ca918" />
 
+# Dashboard Link
+https://public.tableau.com/views/Productanalysis_17881151086980/RevenueperBoxshipped?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
